@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Find Phone by Clap</title>
+  <style>
+    :root {
+      --bg:#0f172a; --card:#ffffff; --ink:#0b1220; --muted:#5b6476; --accent:#2563eb;
+    }
+    html,body { margin:0; padding:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; background:var(--bg); color:#111; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 32px 16px; }
+    .card { background:var(--card); border-radius:16px; box-shadow:0 10px 30px rgba(2,6,23,.2); padding:28px; }
+    h1 { margin:0 0 12px; font-size:28px; color:var(--ink); }
+    .meta { color:var(--muted); font-size:14px; margin-bottom:24px; }
+    h2 { font-size:20px; color:var(--ink); margin-top:24px; }
+    p,li { line-height:1.6; color:#162033; }
+    .langswitch { display:flex; gap:8px; margin:6px 0 22px; }
+    .pill { display:inline-block; padding:8px 12px; border-radius:999px; background:#eef2ff; color:#1e3a8a; text-decoration:none; font-weight:600; }
+    .pill.active { background:var(--accent); color:white; }
+    .foot { margin-top:24px; font-size:14px; color:var(--muted); }
+    code { background:#f1f5f9; padding:2px 6px; border-radius:6px; }
+  </style>
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => el.style.display = (el.dataset.lang === lang) ? 'block' : 'none');
+      document.querySelectorAll('.pill').forEach(el => el.classList.toggle('active', el.dataset.go === lang));
+    }
+    document.addEventListener('DOMContentLoaded', () => setLang('ru'));
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Privacy Policy · Политика конфиденциальности</h1>
+    <div class="meta">App: <strong>Find Phone by Clap</strong> · Developer: <strong>[Your Developer Name]</strong> · Effective date: <strong>2025-10-15</strong></div>
+    <div class="langswitch">
+      <a class="pill active" data-go="ru" href="#" onclick="setLang('ru');return false;">Русский</a>
+      <a class="pill" data-go="en" href="#" onclick="setLang('en');return false;">English</a>
+    </div>
+
+    <!-- Russian -->
+    <section data-lang="ru">
+      <h2>Кратко</h2>
+      <p>Мы уважаем вашу приватность. Приложение использует микрофон только для распознавания хлопков и поиска телефона. Аудио обрабатывается <strong>локально на устройстве</strong>, записи не сохраняются и никуда не отправляются. Камера не используется (если вы видите её разрешение в системе — удалите его из манифеста приложения).</p>
+
+      <h2>Какие разрешения мы используем</h2>
+      <ul>
+        <li><code>RECORD_AUDIO</code> — доступ к микрофону для детекции хлопков. Аудио не записывается и не передаётся.</li>
+        <li>При наличии рекламы/аналитики могут использоваться соответствующие SDK (например, Advertising ID). Укажите это ниже при необходимости.</li>
+      </ul>
+
+      <h2>Сбор, использование и передача данных</h2>
+      <ul>
+        <li><strong>Сбор</strong>: личные данные не собираются. Звуковые сигналы анализируются в памяти устройства и не сохраняются.</li>
+        <li><strong>Использование</strong>: единственная цель — определение хлопков и запуск звукового сигнала/вибрации для поиска телефона.</li>
+        <li><strong>Передача</strong>: мы не передаём ваши данные третьим лицам. Если вы включите сторонние SDK (аналитика/реклама), опишите это и дайте ссылки на их политики.</li>
+      </ul>
+
+      <h2>Хранение</h2>
+      <p>Постоянное хранение персональных данных не ведётся.</p>
+
+      <h2>Безопасность</h2>
+      <p>Мы применяем стандартные меры защиты, минимизируем доступы и используем только необходимые разрешения.</p>
+
+      <h2>Права пользователя</h2>
+      <p>Вы можете удалить приложение в любой момент. Если в будущем появится сбор данных, вы сможете запросить доступ/удаление по адресу ниже.</p>
+
+      <h2>Дети</h2>
+      <p>Приложение не предназначено для детей младше 13 лет.</p>
+
+      <h2>Изменения политики</h2>
+      <p>Мы можем обновлять эту политику. Дата вступления в силу указана вверху страницы.</p>
+
+      <h2>Контакты</h2>
+      <p>По вопросам приватности: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+
+    <!-- English -->
+    <section data-lang="en" style="display:none">
+      <h2>Summary</h2>
+      <p>We respect your privacy. The app uses the microphone only to detect claps and help you find your phone. Audio is processed <strong>on-device</strong>; no recordings are stored or sent anywhere. The camera is not used (if your build requests it, remove that permission from the manifest).</p>
+
+      <h2>Permissions We Use</h2>
+      <ul>
+        <li><code>RECORD_AUDIO</code> — microphone access for clap detection. We do not record or transmit audio.</li>
+        <li>If you include ads/analytics SDKs, declare them below and link to their policies.</li>
+      </ul>
+
+      <h2>Data Collection, Use, and Sharing</h2>
+      <ul>
+        <li><strong>Collection</strong>: we do not collect personal data. Audio signals are analyzed in memory and not stored.</li>
+        <li><strong>Use</strong>: the sole purpose is clap detection to trigger ring/vibration to locate your phone.</li>
+        <li><strong>Sharing</strong>: we do not share your data with third parties. If third‑party SDKs are enabled (analytics/ads), disclose accordingly.</li>
+      </ul>
+
+      <h2>Retention</h2>
+      <p>No persistent personal data is retained.</p>
+
+      <h2>Security</h2>
+      <p>We apply standard security measures, minimize permissions, and request only what is necessary.</p>
+
+      <h2>Your Rights</h2>
+      <p>You can uninstall the app at any time. If data collection is introduced in the future, you may request access/deletion via the contact below.</p>
+
+      <h2>Children</h2>
+      <p>This app is not directed to children under 13.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy; the effective date is stated at the top.</p>
+
+      <h2>Contact</h2>
+      <p>Privacy questions: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+
+    <p class="foot">Tip: replace the developer name and email with your actual details.</p>
+  </div>
+</div>
+</body>
+</html>
